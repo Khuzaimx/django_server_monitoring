@@ -4,7 +4,7 @@ import sys
 import zipfile
 
 def create_zip_archive(source_dir, output_path):
-    """Creates a zip archive of the workspace, excluding local configs, git, and build outputs."""
+    """Creates a zip archive of the workspace, excluding local configs, git, and build outputs. shows percentage in case of zip uploading"""
     print("=== Packaging local codebase ===")
     
     exclude_dirs = {
